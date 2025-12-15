@@ -1,3 +1,7 @@
+---
+tags:
+  - no-graph
+---
 This concept map is built around the topic of the theoretical underpinnings for Human-AI collaboration in a learning environment.
 
 Explore foundational concepts like [[Preparation For Learning (PFL)]], the [[ICAP Framework]], and [[Broudy's Three Ways of Knowing - Replicative, Applicative, Interpretive]].
