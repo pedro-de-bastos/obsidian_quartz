@@ -1,18 +1,48 @@
-# Quartz v4
+# Obsidian Quartz 4.0 Setup
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+This repository is set up to publish your Obsidian notes using [Quartz 4.0](https://quartz.jzhao.xyz/) and GitHub Pages.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## 🚀 Getting Started
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+### 1. Add your Obsidian Content
+Copy your Obsidian vault contents (markdown files, images, etc.) into the `content/` folder of this repository.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+> **Tip:** You can set the `content` folder as your Obsidian Vault directly to edit files in place.
 
-## Sponsors
+### 2. Preview Locally
+To preview your site locally before publishing:
+```bash
+npx quartz build --serve
+```
+Open `http://localhost:8080` in your browser.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+### 3. Deploy to GitHub Pages
+Deployment is automated via GitHub Actions.
+
+1.  **Commit and Push**:
+    ```bash
+    git add .
+    git commit -m "Add my notes"
+    git push origin v4
+    ```
+2.  **Enable GitHub Pages**:
+    *   Go to your repository **Settings** on GitHub.
+    *   Go to **Pages**.
+    *   Under **Build and deployment**, set **Source** to **GitHub Actions**.
+
+### 4. Configuration
+Edit `quartz.config.ts` to customize:
+*   `pageTitle`: The title of your site.
+*   `theme`: Colors and fonts.
+*   `plugins`: Enable/disable features.
+
+## ⚠️ Important Note
+This repository was initialized with a fresh Git history. You need to link it to your GitHub repository:
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git push -u origin v4
+```
+
+## Requirements
+*   Node.js v20+ (v22 recommended)
+*   npm v10+
