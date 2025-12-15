@@ -1,0 +1,7 @@
+A term coined by Teasely and Roschelle (2013), a 'joint problem space' is a construct that represents an integration of the goals, descriptions of the current problem state, awareness of available problem-solving actions, and associations that relate goals, features of the current problem state, and available actions. 
+
+The 'joint problem space' is co-constructed by the collaborators during a collaborative problem solving task. Collaborators introduce and accept new knowledge into the shared JPS, they monitor the ongoing activity for evidence of divergence in meaning, and they repair divergences that can be obstacles to the collaboration.
+
+You could say that the concept of a JPS is directly related to the idea of [[Co-Inference]] from the [[ICAP Framework]]. In other words, the JPS can be seen as the inter-personal mental model that is built and refined during the problem solving activity, that enables the collaborators to solve a problem. As such, the construction of the JPS would likely constitute what is called 'interactive' engagement in the ICAP framework.
+
+Teasley, S. D., & Roschelle, J. (2013). Constructing a joint problem space: The computer as a tool for sharing knowledge. In _Computers as cognitive tools_ (pp. 229-258). Routledge.

@@ -1,0 +1,3 @@
+A learning approach championed by Swchartz et al (2005) which emphasizes that 'transfer' learning enables students to learn adaptively, while solving problems. This stands in contrast to [[Sequestered Problem Solving]], where students are not expected to 'learn' while problem solving, but instead to apply known procedures.
+
+Schwartz, Daniel L, John D Bransford, and David Sears. _Efficiency and Innovation in Transfer_. n.d.

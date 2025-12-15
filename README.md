@@ -4,19 +4,24 @@ This repository is set up to publish your Obsidian notes using [Quartz 4.0](http
 
 ## 🚀 Getting Started
 
-### 1. Link your Obsidian Vault
-You have two options to use your existing vault:
+### 1. Sync your Obsidian Vault
+Because GitHub Pages cannot access files on your local computer, we need to copy them into the repository.
 
-**Option A: Symbol Link (Recommended)**
-This creates a link so Quartz sees your vault as the `content` folder.
-1.  Delete the default content folder: `rm -rf content`
-2.  Create the link: `ln -s "/path/to/your/obsidian/vault" content`
-    *   *Note: Replace the path with the actual absolute path to your vault.*
+I have created a script `sync_vault.sh` to do this for you.
 
-**Option B: Copy Content**
-Copy your Obsidian vault contents (markdown files, images, etc.) into the `content/` folder of this repository.
+**To Update Your Site:**
+1.  Run the sync script:
+    ```bash
+    ./sync_vault.sh
+    ```
+2.  Commit and push:
+    ```bash
+    git add .
+    git commit -m "Update notes"
+    git push origin v4
+    ```
 
-> **Tip:** If you use Option A, any changes you make in Obsidian will be immediately reflected in Quartz when you rebuild.
+> **Note:** The script uses `rsync` to mirror your vault to the `content/` folder, excluding private folders like `.obsidian`.
 
 ### 2. Preview Locally
 To preview your site locally before publishing:
